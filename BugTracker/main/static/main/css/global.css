@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* --background: white; */
+    --background:#F7F7F7;
+    --text-color: black;
+    --primary: #2A008C;
+    --secondary: #65ffc3;
+    --secondary: white;
+    --status-reported: gray;
+    --status-resolved: green;
+    --status-rejected: crimson;
+    --status-processing: blue;
+    --status-reported-half: rgba(128, 128, 128, 0.1);
+    --status-resolved-half: rgba(0, 128, 0, 0.1);
+    --status-rejected-half: rgba(220, 20, 60, 0.1);
+    --status-processing-half: rgba(0, 0, 255, 0.1);
+}
+
+body {
+    background: var(--background);
+    color: var(--text-color);
+    font-family: "Roboto Slab";
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url("/static/main/images/background8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.containerContent {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    width: 38%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(42, 0, 140, 0.1);
+    border-radius: 12px;
+    position: absolute;
+    margin-top: 20px;
+}
+.containerContent h2 {
+    font-size: 35px;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.containerContent p{
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+.containerContent h4 {
+    font-size: 35px;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contentText{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.form1 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form1 input {
+    width: 80%;
+    padding: 8px 24px;
+    height: 60px;
+    font-size: 16px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: black;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    background: white;
+    margin-top: 15px;
+}
+
+.form1 button{
+    width: fit-content;
+    height: fit-content;
+    padding: 12px 28px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Roboto Slab";
+    border: none;
+    background: var(--primary);
+    color: var(--secondary);
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 35px;
+}
+
+.messages {
+    list-style: none;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+.messages li{
+    width: 100%;
+    padding: 4px 12px;
+    border-radius: 2px;
+}
+.error {
+    color: crimson;
+    background: rgba(255,0,0,0.1);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: var(--primary);
+}
+footer p{
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+footer p span{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.logoutBtn {
+    height: fit-content;
+    width: fit-content;
+    font-size: 16px;
+    padding: 4px 12px;
+    border-radius: 2px;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
